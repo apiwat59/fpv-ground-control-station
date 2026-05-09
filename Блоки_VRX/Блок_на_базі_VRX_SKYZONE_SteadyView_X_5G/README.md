@@ -4,7 +4,7 @@ VRX блок на базі відеоприймача Skyzone SteadyView X 5G я
 
 <img width="600" alt="Загальний вигляд VRX блоку на базі відеоприймача Skyzone SteadyView X 5G" src="picture/general_view_of_the_Skyzone_SteadyView_X_5G_VRX_unit.png" />
 
-## Короткі технічні параметри VRX блоку на базі відеоприймача VRX Skyzone SteadyView X 5G
+## Короткі технічні параметри VRX блоку на базі відеоприймача Skyzone SteadyView X 5G
 
 | Параметр | Значення | Примітка |
 |----------|---------|---------|
