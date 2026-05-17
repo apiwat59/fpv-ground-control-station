@@ -39,8 +39,8 @@
 
 | Найменування | Кількість| Примітка |
 | :--- | :--- | :---: |
-| Модуль конвертора інтерфейсів BARVINOK-5 RS-485 nano V2.1 | 1 штука | Модуль Українського виробництва |
-| Перетворювач напруги GUTI ELECTRONICS BEC12S-PRO | 1 штука | Український аналог Matek BEC 12S PRO |
+| Модуль конвертора інтерфейсів BARVINOK-5 RS-485 nano V2.1 | 1 штука | Модуль Українського виробництва [придбати BARVINOK-5 RS-485 nano V2.1 у виробника](https://prom.ua/ua/p2693881056-adapter-port-485.html)  |
+| Перетворювач напруги GUTI ELECTRONICS BEC12S-PRO | 1 штука | Український аналог Matek BEC 12S PRO [придбати GUTI ELECTRONICS BEC12S-PRO у виробника](https://prom.ua/ua/p2814749849-otechestvennyj-analog-matek.html) |
 | Вилка блочна GX12-6 pin (male) | 1 штука | XS2 |
 | Роз'єм живлення DC-022 | 1 штука | XS3 |
 | Штирьова лінійка 1х40 крок 2.54мм L=25мм | 3 піни | |
