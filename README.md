@@ -1,56 +1,56 @@
-# Наземна станція керування «ГАЛІТ» 
+# Ground Control Station 'HALYT'
 
-Наземна станція керування «ГАЛІТ» для FPV-дронів є модульною системою, яка допускає зміну конфігурації залежно від поставлених задач та умов експлуатації. 
+The Ground Control Station 'HALYT' for FPV drones is a modular system that allows configuration changes depending on the tasks and operating conditions.
 
-<img width="800" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/ground_control_station_main_preview.jpg" />
+<img width="800" alt="General view of GCS 'HALYT'" src="assets/picture/ground_control_station_main_preview.jpg" />
 
-Архітектура станції побудована за принципом функціонального розділення складових системи та допускає розширення функціоналу шляхом інтеграції додаткових модулів без зміни базової структури.
+The station's architecture is based on the principle of functional separation of system components and allows for functional expansion by integrating additional modules without changing the basic structure.
 
-<img width="800" alt="Архітектура НСК «ГАЛІТ»" src="assets/block_diagram/ground_station_architecture_block_diagram.JPG" />
+<img width="800" alt="GCS 'HALYT' Architecture" src="assets/block_diagram/ground_station_architecture_block_diagram.JPG" />
 
-Розробка системи проводилася з урахуванням власного бойового досвіду, доступності компонентів, максимальної підтримки вітчизняних виробників та можливості відтворення конструкції технічним персоналом в умовах військово-польових, цивільних або волонтерських майстерень із середнім рівнем оснащеності.
+The system was developed taking into account our own combat experience, availability of components, maximum support for domestic manufacturers, and the possibility of reproducing the design by technical personnel in military-field, civilian, or volunteer workshops with a medium level of equipment.
 
-Рекомендується дотримуватись наступного порядку виготовлення та складання системи:
+It is recommended to follow the sequence below for manufacturing and assembling the system:
 
-1.	**[Універсальний кейс та корпус станції](Універсальний_кейс_та_корпус_станції/)**
-2.	**[Блок керування станцією](Блок_керування_станцією/)**
-3.	**[Модернізація монітора](Модернізація_монітора/)**
-4.	**[Виносний блок](Виносний_блок/)**
-5.	**[Блоки VRX](Блоки_VRX/)**
-6.	**[Підсистема керування](Підсистема%20керування/)**
-7.	**[Кабелі](Кабелі/)**
+1.	**[Universal case and station body](Universal_case_and_station_body/)**
+2.	**[Station control unit](Station_control_unit/)**
+3.	**[Monitor modernization](Monitor_modernization/)**
+4.	**[Remote unit](Remote_unit/)**
+5.	**[VRX blocks](VRX_blocks/)**
+6.	**[Control_subsystem](Control_subsystem/)**
+7.	**[Cables](Cables/)**
 
-## Відеоінструкція з виготовлення та складання НСК «ГАЛІТ» 
+## Video Guide for Manufacturing and Assembling GCS 'HALYT'
 
-[![НСК ГАЛІТ — Повна відеоінструкція зі збірки](https://img.youtube.com/vi/9ohl-sQVgZU/maxresdefault.jpg)](https://www.youtube.com/watch?v=9ohl-sQVgZU)
+[![GCS HALYT — Full assembly video guide](https://img.youtube.com/vi/9ohl-sQVgZU/maxresdefault.jpg)](https://www.youtube.com/watch?v=9ohl-sQVgZU)
 
-*Натисніть на зображення, щоб перейти до перегляду на YouTube.*
+*Click on the image to watch the video on YouTube.*
 
-При дотриманні технологічних інструкцій та культури виробництва готовий виріб забезпечує рівень механічної міцності, ремонтопридатності та експлуатаційних характеристик, співставний з комерційними зразками аналогічного класу. Загальний вигляд наземної станції керування «ГАЛІТ» показано на світлинах.
+When manufacturing instructions and production culture are followed, the finished product provides a level of mechanical strength, maintainability, and operational characteristics comparable to commercial models of a similar class. The general view of the Ground Control Station 'HALYT' is shown in the photos.
 
-<img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_1.jpg" /> <img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_2.jpg" /> <img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_3.jpg" />
+<img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_1.jpg" /> <img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_2.jpg" /> <img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_3.jpg" />
 
-<img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_4.jpg" /> <img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_5.jpg" /> <img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_6.jpg" />
+<img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_4.jpg" /> <img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_5.jpg" /> <img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_6.jpg" />
 
-<img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_7.jpg" /> <img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_8.jpg" /> <img width="250" alt="Загальний вигляд НСК «ГАЛІТ»" src="assets/picture/general_view_ground_control_station_9.jpg" />
+<img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_7.jpg" /> <img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_8.jpg" /> <img width="250" alt="General view of GCS 'HALYT'" src="assets/picture/general_view_ground_control_station_9.jpg" />
 
-## Ліцензія
+## License
 
-Використання матеріалів, розміщених у цьому репозиторії, регулюється Ліцензійною угодою, яка містить наступні ключові положення:
+The use of the materials in this repository is governed by the License Agreement, which contains the following key provisions:
 
-- Матеріали надаються виключно для технічного, навчального, дослідницького або іншого некомерційного використання.
-- Виготовлення виробів на основі Матеріалів допускається виключно для некомерційного використання, зокрема для потреб оборони України.
-- Будь-яке комерційне використання матеріалів, їх модифікацій або виробів, виготовлених на їх основі, заборонене без окремої письмової згоди ДКБ-1571.
-- Повторне розповсюдження матеріалів не допускається. Дозволяється лише поширення посилань на офіційні ресурси ДКБ-1571.
-- Матеріали надаються за принципом «як є» (as is). Користувач використовує їх на власний ризик.
-- Виняткові майнові права інтелектуальної власності на Матеріали належать ДКБ-1571.
+- Materials are provided exclusively for technical, educational, research, or other non-commercial use.
+- The manufacture of products based on the Materials is permitted exclusively for non-commercial use, in particular for the defense needs of Ukraine.
+- Any commercial use of the materials, their modifications, or products manufactured on their basis is prohibited without the separate written consent of DKB-1571.
+- Redistribution of the materials is not allowed. Only sharing links to the official resources of DKB-1571 is permitted.
+- Materials are provided on an 'as is' basis. The User uses them at their own risk.
+- The exclusive proprietary intellectual property rights to the Materials belong to DKB-1571.
 
-Будь ласка, ознайомтеся з повною версією ліцензійної угоди у файлі `LICENSE.md` цього репозиторію.
+Please review the full version of the license agreement in the `LICENSE.md` file of this repository.
 
 ---
 
-Проект створено на основі практичного бойового досвіду експлуатації FPV-систем.
+The project was created based on practical combat experience operating FPV systems.
 
-Інженер «Тролейбус»  
-Донецька область, Україна  
-2026 рік
+Engineer 'Trolleybus'  
+Donetsk Oblast, Ukraine  
+2026
