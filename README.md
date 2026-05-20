@@ -6,7 +6,7 @@ Ground Control Station 'HALYT' สำหรับ FPV drones เป็น modula
 
 สถาปัตยกรรมของสถานีตั้งอยู่บนหลักการของการแยกส่วนการทำงานของ system components ออกจากกัน และอนุญาตให้เพิ่ม functional expansion ได้โดยการรวม modules เพิ่มเติมโดยไม่ต้องเปลี่ยนโครงสร้างพื้นฐาน
 
-<img width="800" alt="GCS 'HALYT' Architecture" src="assets/block_diagram/ground_station_architecture_block_diagram.JPG" />
+<img width="800" alt="GCS 'HALYT' Architecture" src="assets/block_diagram/ground_station_architecture_block_diagram.png" />
 
 ระบบนี้ได้รับการพัฒนาขึ้นโดยคำนึงถึงประสบการณ์การรบจริงของเรา, ความพร้อมใช้งานของ components, การสนับสนุนผู้ผลิตในประเทศอย่างสูงสุด และความเป็นไปได้สำหรับเจ้าหน้าที่ด้านเทคนิคในการทำซ้ำแบบในโรงเวิร์กชอปภาคสนามทางการทหาร พลเรือน หรืออาสาสมัครที่มีอุปกรณ์ระดับปานกลาง
 
