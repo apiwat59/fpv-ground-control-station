@@ -1,28 +1,28 @@
 # Universal frame
 
-The universal frame is designed for mounting and mechanical integration of the remote unit hub and peripheral devices. The remote unit hub, together with the peripheral devices installed on the universal frame, forms the remote unit of the ground control station.
+Universal frame ได้รับการออกแบบมาสำหรับการติดตั้งและ mechanical integration ของ remote unit hub และ peripheral devices โดย remote unit hub และ peripheral devices ที่ติดตั้งอยู่บน universal frame จะประกอบกันเป็น remote unit ของ ground control station
 
-The frame design ensures:
-- installation of the remote unit hub
-- installation of the TX unit and VRX units
-- unified mounting of the system components
-- quick transition of the remote unit between transport and operational positions
+การออกแบบ frame ช่วยรองรับ:
+- การติดตั้ง remote unit hub
+- การติดตั้ง TX unit และ VRX units
+- การยึดชิ้นส่วนต่างๆ ของระบบเข้าด้วยกันอย่างเป็นหนึ่งเดียว
+- การปรับเปลี่ยนสถานะของ remote unit อย่างรวดเร็วระหว่างตำแหน่ง transport และ operational
 
 <img width="600" alt="General view of the remote unit" src="picture/general_view_of_the_remote_unit.png" />
 
 ## Design Features
 
-- The design has a modular architecture
-- Provision is made for mounting interchangeable TX and VRX units
-- All modules are secured with screw connections
-- The design provides resistance to mechanical loads and vibrations
+- โครงสร้างการออกแบบมีลักษณะเป็น modular architecture
+- มีพื้นที่รองรับสำหรับการติดตั้ง TX และ VRX units ที่สับเปลี่ยนกันได้
+- ทุก module จะถูกยึดด้วยจุดเชื่อมต่อแบบ screw
+- การออกแบบมีคุณสมบัติทนทานต่อ mechanical loads และการสั่นสะเทือน (vibrations)
 
 ## Transport Position
 
-The transport position of the remote unit in the ground control station case includes:
-- dismantled stand
-- no VRX unit in the auxiliary slot
-- fixed position of peripheral devices
+การจัดตำแหน่ง transport position ของ remote unit ในกล่อง ground control station ประกอบไปด้วย:
+- ถอดชิ้นส่วน stand ออก
+- ไม่มี VRX unit ใน auxiliary slot
+- จัดตำแหน่งยึดของ peripheral devices ให้คงที่
 
 <img width="800" alt="Transport position of the remote unit" src="picture/transport_position_of_the_remote_unit.jpg" />
 
@@ -30,14 +30,14 @@ The transport position of the remote unit in the ground control station case inc
 
 | Part Name | Qty | Note |
 | :--- | :--- | :---: |
-| Screw M2x10 DIN 7985 | 12 pcs | Mounting peripheral devices |
-| Nut M2 DIN 934 | 12 pcs | Mounting peripheral devices |
-| Screw M3x14 DIN 7985 A2 | 2 pcs | Mounting remote unit handle |
-| Screw M3x20 DIN 7985 A2 | 2 pcs | Mounting the stand |
-| Screw M3x30 DIN 965 | 5 pcs | Mounting universal frame to the hub |
-| Nut M3 DIN 934 | 9 pcs | Mounting universal frame to the hub, mounting the stand, mounting remote unit handle |
-| Wing nut M3 DIN 315 | 2 pcs | Mounting the stand |
-| Self-tapping screw 2x8 DIN 7982 | 2 pcs | Mounting antenna retainer |
+| Screw M2x10 DIN 7985 | 12 pcs | ยึด peripheral devices |
+| Nut M2 DIN 934 | 12 pcs | ยึด peripheral devices |
+| Screw M3x14 DIN 7985 A2 | 2 pcs | ยึด remote unit handle |
+| Screw M3x20 DIN 7985 A2 | 2 pcs | ยึด stand |
+| Screw M3x30 DIN 965 | 5 pcs | ยึด universal frame เข้ากับ hub |
+| Nut M3 DIN 934 | 9 pcs | ยึด universal frame เข้ากับ hub, ยึด stand, ยึด remote unit handle |
+| Wing nut M3 DIN 315 | 2 pcs | ยึด stand |
+| Self-tapping screw 2x8 DIN 7982 | 2 pcs | ยึด antenna retainer |
 | Part 1 - 3D printing | 1 pc |  |
 | Part 2 - 3D printing | 1 pc |  |
 | Part 3 - 3D printing | 1 pc |  |

@@ -1,6 +1,6 @@
 # TX_unit
 
-The TX unit provides the capability to connect a JR-compatible control transmitter module to the remote unit hub for subsequent two-way data exchange with the control panel connected to the station control unit. The general view of the TX unit with the control transmitter installed is shown in the image.
+TX unit ทำหน้าที่เชื่อมต่อ JR-compatible control transmitter module เข้ากับ remote unit hub เพื่อส่งผ่านและแลกเปลี่ยนข้อมูลแบบสองทิศทาง (two-way data exchange) กับ control panel ที่เชื่อมต่ออยู่กับ station control unit รูปภาพแสดงภาพรวมภายนอก (general view) ของ TX unit ขณะติดตั้ง control transmitter เรียบร้อยแล้ว
 
 <img width="600" alt="General view of the TX unit with the control transmitter installed" src="picture/general_view_of_the_TX_unit_with_the_transmitter_module_installed.png" />
 
@@ -8,30 +8,30 @@ The TX unit provides the capability to connect a JR-compatible control transmitt
 
 | Parameter | Value | Note |
 |----------|---------|---------|
-| Control protocol | CRSF | Via S.Port |
-| Transmission interface | Differential signal of the RS-485 standard | |
+| Control protocol | CRSF | ผ่าน S.Port |
+| Transmission interface | Differential signal ของมาตรฐาน RS-485 | |
 | Operating mode | Two-way | Control + telemetry |
-| TX unit power supply | From the remote unit hub | Via XS2 |
-| Control transmitter TX module power supply | 8V | From the TX unit |
-| TX unit output voltage via XS3 connector | 8V | Maximum continuous current 2A |
-| Cooling | Passive | Heatsinks + ventilation holes |
+| TX unit power supply | จาก remote unit hub | ผ่าน XS2 |
+| Control transmitter TX module power supply | 8V | จาก TX unit |
+| TX unit output voltage via XS3 connector | 8V | กระแสต่อเนื่องสูงสุด 2A |
+| Cooling | Passive | Heatsinks + ช่องระบายอากาศ |
 | Shielding | Partial | |
 
 ### Interfaces
 
 | Connector | Purpose | Main signals | Note |
 |--------|------------|----------------|----------|
-| XS1 | Connection of the control transmitter | VCC, GND, CRSF (S.Port) | JR-compatible control transmitters are supported |
-| XS2 | Connection to the remote unit hub | +BAT, GND, differential signal of the RS-485 standard | |
-| XS3 | 8V power output | VCC, GND | Connection of high-power control transmitters |
+| XS1 | การเชื่อมต่อของ control transmitter | VCC, GND, CRSF (S.Port) | รองรับ JR-compatible control transmitters |
+| XS2 | การเชื่อมต่อกับ remote unit hub | +BAT, GND, differential signal ของมาตรฐาน RS-485 | |
+| XS3 | ช่องจ่ายไฟออก 8V power output | VCC, GND | การเชื่อมต่อของ high-power control transmitters |
 
 ## Circuitry and Functionality of the TX Unit for the Control Transmitter
 
-The TX unit is powered from the remote unit hub. The voltage from the XS2 connector goes to the common ground bus (for which a copper cooling heatsink is used) and to the voltage converter, which generates 8V to power the interface converter and the control transmitter (make sure your TX module supports 8V power). The 8V voltage is additionally output to the XS3 connector to allow powering high-power control transmitters that require external power. Note that a high-power control transmitter, when powered from the XS3 connector, should not have electrical contact with the GND pin of the XS1 connector to prevent a ground loop.
+TX unit รับพลังงานมาจาก remote unit hub โดยแรงดันไฟฟ้าจาก connector XS2 จะถูกส่งไปยัง common ground bus (ซึ่งใช้ copper cooling heatsink ในการระบายความร้อน) และส่งต่อไปยัง voltage converter ซึ่งจะสร้างแรงดัน 8V เพื่อจ่ายไฟให้กับ interface converter และ control transmitter (โปรดตรวจสอบให้แน่ใจว่า TX module ของคุณรองรับแหล่งจ่ายไฟ 8V) นอกจากนี้แรงดันไฟ 8V จะถูกจ่ายออกไปยัง connector XS3 เพื่อรองรับการจ่ายพลังงานให้แก่ high-power control transmitters ที่ต้องการแหล่งจ่ายไฟภายนอก (external power) ทั้งนี้ high-power control transmitter เมื่อรับไฟจาก connector XS3 แล้ว จะต้องไม่มีการเชื่อมต่อทางไฟฟ้ากับขา GND pin ของ connector XS1 เพื่อหลีกเลี่ยงการเกิด ground loop
 
-Two-way data exchange between the control transmitter and the control panel is carried out using the RS-485 standard via the ground control station's switching lines. Control signals via the XS2 connector are fed to the interface converter (BARVINOK-5 RS-485 nano V2.1 module), which converts the differential signal of the RS-485 standard into a high-speed CRSF protocol signal and sends it to the control transmitter via the S.Port pin of the XS1 connector.
+การแลกเปลี่ยนข้อมูลแบบสองทิศทาง (two-way data exchange) ระหว่าง control transmitter และ control panel จะดำเนินการตามมาตรฐาน RS-485 ผ่าน switching lines ของ ground control station โดยสัญญาณควบคุมผ่าน connector XS2 จะถูกส่งไปยัง interface converter (โมดูล BARVINOK-5 RS-485 nano V2.1) ซึ่งจะแปลง differential signal ของมาตรฐาน RS-485 เป็นสัญญาณโปรโตคอล CRSF ความเร็วสูง แล้วส่งไปยัง control transmitter ผ่านขา S.Port pin ของ connector XS1
 
-Stabilization of the device's temperature modes is provided by a passive cooling system consisting of ventilation holes in the housing, a silicone thermal pad, and a copper heatsink. The copper heatsink is used as the common ground (GND) bus, which allows it to perform the function of an additional shield to protect against electromagnetic interference.
+การรักษาเสถียรภาพของอุณหภูมิของอุปกรณ์ (temperature modes) ใช้ระบบระบายความร้อนแบบ passive cooling ซึ่งประกอบด้วยช่องระบายอากาศใน housing, silicone thermal pad และ copper heatsink ตัว copper heatsink นี้ทำหน้าที่เป็น common ground (GND) bus ซึ่งช่วยให้สามารถทำหน้าที่เป็นแผงป้องกันเพิ่มเติม (additional shield) เพื่อป้องกันสัญญาณรบกวนทางแม่เหล็กไฟฟ้า (electromagnetic interference) ได้
 
 <img width="800" alt="Schematic diagram of the TX unit for the control transmitter" src="schematic_diagram/schematic_diagram_of_the_TX_unit.JPG" />
 
@@ -39,8 +39,8 @@ Stabilization of the device's temperature modes is provided by a passive cooling
 
 | Name | Quantity | Note |
 | :--- | :--- | :---: |
-| BARVINOK-5 RS-485 nano V2.1 interface converter module | 1 pc | Ukrainian-made module [purchase BARVINOK-5 RS-485 nano V2.1 from the manufacturer](https://prom.ua/ua/p2693881056-adapter-port-485.html) |
-| GUTI ELECTRONICS BEC12S-PRO voltage converter | 1 pc | Ukrainian analog of Matek BEC 12S PRO [purchase GUTI ELECTRONICS BEC12S-PRO from the manufacturer](https://prom.ua/ua/p2814749849-otechestvennyj-analog-matek.html) |
+| BARVINOK-5 RS-485 nano V2.1 interface converter module | 1 pc | โมดูลผลิตในยูเครน [ซื้อ BARVINOK-5 RS-485 nano V2.1 จากผู้ผลิต](https://prom.ua/ua/p2693881056-adapter-port-485.html) |
+| GUTI ELECTRONICS BEC12S-PRO voltage converter | 1 pc | โมดูลเทียบเท่าของยูเครนเทียบกับ Matek BEC 12S PRO [ซื้อ GUTI ELECTRONICS BEC12S-PRO จากผู้ผลิต](https://prom.ua/ua/p2814749849-otechestvennyj-analog-matek.html) |
 | GX12-6 pin panel mount plug (male) | 1 pc | XS2 |
 | DC-022 power socket | 1 pc | XS3 |
 | Pin header 1x40 2.54mm pitch L=25mm | 3 pins | |
@@ -77,19 +77,19 @@ Material: coPET black MonoFilament
 
 ## XS1 Connector Assembly Process
 
-The XS1 connector is formed by mounting long and short pins on the adapter board, which is made from a double-sided prototyping board. Long pins (L=25mm) are soldered in such a way that they do not extend beyond the adapter board on the side of the short pins. A thin copper wire is used as jumpers between the mounting holes of the prototyping board.
+connector XS1 ถูกประกอบโดยการติดตั้ง long pins และ short pins บน adapter board ที่ตัดมาจาก double-sided prototyping board โดย long pins (L=25mm) จะถูกบัดกรีในลักษณะที่ไม่ยื่นเลย adapter board ออกไปทางด้านของ short pins และใช้สายทองแดงขนาดเล็กเป็นสายเชื่อม (jumpers) ระหว่าง mounting holes ของ prototyping board
 
 <img width="400" alt="XS1 connector assembly process" src="picture/XS1_connector_assembly_process_1.jpg" /> <img width="400" alt="XS1 connector assembly process" src="picture/XS1_connector_assembly_process_2.jpg" />
 
-Short pins (L=15mm) are soldered in the opposite direction relative to the long pins.
+short pins (L=15mm) จะถูกบัดกรีในทิศทางตรงกันข้ามกับ long pins
 
 <img width="400" alt="XS1 connector assembly process" src="picture/XS1_connector_assembly_process_3.jpg" />
 
-On the side of the short pins, three layers of self-adhesive electrical insulating paper are applied to the adapter board to protect against short circuits from the adapter board's contact pads to the common ground (GND) polygon of the interface converter.
+ที่ฝั่งของ short pins จะมีการติด self-adhesive electrical insulating paper จำนวน 3 ชั้นลงบน adapter board เพื่อป้องกันการเกิดลัดวงจร (short circuits) จาก contact pads ของ adapter board ไปยัง common ground (GND) polygon ของ interface converter
 
 <img width="400" alt="XS1 connector assembly process" src="picture/XS1_connector_assembly_process_4.jpg" />
 
-The short pins are soldered to the interface converter, the excess length of the central (GND) and right (S.Port) pins is cut off, and the left (VCC) pin is trimmed by approximately half, thus forming the point to which 8V from the voltage converter will be supplied to power the interface converter and the control transmitter. The long pins are inserted into the corresponding holes of the unit's base during the installation of the interface converter.
+short pins จะถูกบัดกรีเข้ากับ interface converter จากนั้นให้ตัดส่วนเกินของขาแกนกลาง (GND) และขาขวา (S.Port) ออก ส่วนขาซ้าย (VCC) ให้ตัดออกประมาณครึ่งหนึ่ง เพื่อสร้างเป็นจุดรับแรงดันไฟ 8V จาก voltage converter เพื่อนำไปเลี้ยง interface converter และ control transmitter สำหรับ long pins จะถูกเสียบเข้ากับช่องที่ตรงกันใน base ของ unit ระหว่างขั้นตอนการติดตั้ง interface converter
 
 <img width="400" alt="XS1 connector assembly process" src="picture/XS1_connector_assembly_process_5.jpg" /> <img width="400" alt="XS1 connector assembly process" src="picture/XS1_connector_assembly_process_6.jpg" />
 
@@ -97,14 +97,14 @@ The short pins are soldered to the interface converter, the excess length of the
 
 | Name | Type/Size | Quantity | Note |
 | :--- | :--- | :---: | :---: |
-| Screw | M3x8 DIN 965 | 2 pcs | Mounting the BARVINOK-5 RS-485 nano V2.1 module |
-| Nut | M3 DIN 934 | 2 pcs | Mounting the BARVINOK-5 RS-485 nano V2.1 module |
-| Screw | M2x10 DIN 7985 | 6 pcs | Mounting the heatsink |
-| Washer | M2 DIN 125 | 6 pcs | Mounting the heatsink |
-| Nut | M2 DIN 934 | 6 pcs | Mounting the heatsink |
-| Screw | M2x10 DIN 7985 | 6 pcs | Mounting the cover |
-| Washer | M2 DIN 125 | 6 pcs | Mounting the cover |
-| Nut | M2 DIN 934 | 6 pcs | Mounting the cover |
+| Screw | M3x8 DIN 965 | 2 pcs | การติดตั้ง module BARVINOK-5 RS-485 nano V2.1 |
+| Nut | M3 DIN 934 | 2 pcs | การติดตั้ง module BARVINOK-5 RS-485 nano V2.1 |
+| Screw | M2x10 DIN 7985 | 6 pcs | การติดตั้ง heatsink |
+| Washer | M2 DIN 125 | 6 pcs | การติดตั้ง heatsink |
+| Nut | M2 DIN 934 | 6 pcs | การติดตั้ง heatsink |
+| Screw | M2x10 DIN 7985 | 6 pcs | การติดตั้ง cover |
+| Washer | M2 DIN 125 | 6 pcs | การติดตั้ง cover |
+| Nut | M2 DIN 934 | 6 pcs | การติดตั้ง cover |
 
 ## Wire Usage Details
 

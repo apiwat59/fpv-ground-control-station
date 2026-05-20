@@ -1,1 +1,1 @@
-Designed with Sprint-Layout 6.0
+ออกแบบด้วย Sprint-Layout 6.0

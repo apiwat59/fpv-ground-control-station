@@ -1,6 +1,6 @@
 # JR_module_adapter
 
-The JR_module_adapter provides the capability to connect a control panel with a JR-compatible bay to the station control unit for subsequent two-way data exchange with the control transmitter on the station's remote unit.
+JR_module_adapter ทำหน้าที่เชื่อมต่อ control panel ที่มี JR-compatible bay เข้ากับ station control unit เพื่อส่งผ่านและแลกเปลี่ยนข้อมูลแบบสองทิศทาง (two-way data exchange) กับ control transmitter ที่อยู่บน remote unit ของสถานี
 
 <img width="600" alt="General view of the JR module" src="picture/general_view_of_the_JR_module.png" />
 
@@ -8,27 +8,27 @@ The JR_module_adapter provides the capability to connect a control panel with a 
 
 | Parameter | Value | Note |
 |----------|---------|---------|
-| Control protocol | CRSF | Via S.Port |
-| Transmission interface | Differential signal of the RS-485 standard | |
+| Control protocol | CRSF | ผ่าน S.Port |
+| Transmission interface | Differential signal ของมาตรฐาน RS-485 | |
 | Operating mode | Two-way | Control + telemetry |
-| JR module adapter power supply | 5–8.4 V | From the control panel |
-| Cooling | Passive | Heatsinks + ventilation holes |
+| JR module adapter power supply | 5–8.4 V | จาก control panel |
+| Cooling | Passive | Heatsinks + ช่องระบายอากาศ |
 | Shielding | Partial | |
 
 ### Interfaces
 
 | Connector | Purpose | Main signals | Note |
 |--------|------------|----------------|----------|
-| XS1 | Connection to the control panel | +BAT, GND, CRSF | The control panel must be equipped with a JR-compatible bay |
-| XS2 | Connection to the station control unit | Differential signal of the RS-485 standard, GND | |
+| XS1 | การเชื่อมต่อกับ control panel | +BAT, GND, CRSF | Control panel ต้องมี JR-compatible bay |
+| XS2 | การเชื่อมต่อกับ station control unit | Differential signal ของมาตรฐาน RS-485, GND | |
 
 ## Circuitry and Functionality of the JR Module Adapter
 
-The adapter is powered directly from the control panel via the XS1 connector in the 5V–8.4V range.
+Adapter นี้ใช้พลังงานโดยตรงจาก control panel ผ่าน connector XS1 ในย่านแรงดัน 5V–8.4V
 
-The high-speed signal from the control panel via the S.Port pin (CRSF protocol) of the XS1 connector is fed to the interface converter (BARVINOK-5 RS-485 nano V2.1 module), which converts it into a differential signal of the RS-485 standard and outputs it through the XS2 connector into the ground control station's switching lines.
+สัญญาณความเร็วสูง (high-speed signal) จาก control panel ผ่านขา S.Port pin (โปรโตคอล CRSF) ของ connector XS1 จะถูกส่งไปยัง interface converter (โมดูล BARVINOK-5 RS-485 nano V2.1) ซึ่งจะแปลงสัญญาณดังกล่าวเป็น differential signal ของมาตรฐาน RS-485 และส่งออกผ่าน connector XS2 ไปยัง switching lines ของ ground control station
 
-Stabilization of the device's temperature modes is provided by a passive cooling system consisting of ventilation holes in the housing, a silicone thermal pad, and a copper heatsink. The heatsink is electrically connected to the common wire (GND), allowing it to perform the function of an additional shield to protect against electromagnetic interference.
+การรักษาเสถียรภาพของอุณหภูมิของอุปกรณ์ (temperature modes) ใช้ระบบระบายความร้อนแบบ passive cooling ซึ่งประกอบด้วยช่องระบายอากาศใน housing, silicone thermal pad และ copper heatsink ตัว heatsink จะถูกเชื่อมต่อทางไฟฟ้ากับสายกราวด์ร่วม (GND) ทำให้สามารถทำหน้าที่เป็นแผงป้องกันเพิ่มเติม (additional shield) เพื่อป้องกันสัญญาณรบกวนทางแม่เหล็กไฟฟ้า (electromagnetic interference) ได้
 
 <img width="800" alt="Schematic diagram of the JR module" src="schematic_diagram/schematic_diagram_of_the_JR_module_adapter.JPG" />
 
@@ -36,7 +36,7 @@ Stabilization of the device's temperature modes is provided by a passive cooling
 
 | Name | Quantity | Note |
 | :--- | :--- | :---: |
-| BARVINOK-5 RS-485 nano V2.1 interface converter module | 1 pc | Ukrainian-made module [purchase BARVINOK-5 RS-485 nano V2.1 from the manufacturer](https://prom.ua/ua/p2693881056-adapter-port-485.html) |
+| BARVINOK-5 RS-485 nano V2.1 interface converter module | 1 pc | โมดูลผลิตในยูเครน [ซื้อ BARVINOK-5 RS-485 nano V2.1 จากผู้ผลิต](https://prom.ua/ua/p2693881056-adapter-port-485.html) |
 | PCE-C-05 connector | 1 pc | XS1 |
 | GX12-6 pin panel mount plug (male) | 1 pc | XS2 |
 | Double-sided prototyping board with 2.54 mm pitch | 30 mm x 70 mm |  |
@@ -73,20 +73,20 @@ Material: coPET black MonoFilament
 
 | Name | Type/Size | Quantity | Note |
 | :--- | :--- | :---: | :---: |
-| Screw | M2x5 DIN 7985 | 2 pcs | Mounting the board with the XS1 connector |
-| Nut | M2 DIN 934 | 2 pcs | Mounting the board with the XS1 connector |
-| Screw | M2x10 DIN 7985 | 1 pc | Mounting the XS1 connector retainer |
-| Nut | M2 DIN 934 | 1 pc | Mounting the XS1 connector retainer |
-| Screw | M3x8 DIN 965 | 2 pcs | Mounting the BARVINOK-5 RS-485 nano V2.1 module |
-| Nut | M3 DIN 934 | 2 pcs | Mounting the BARVINOK-5 RS-485 nano V2.1 module |
-| Screw | M2x5 DIN 7985 | 4 pcs | Mounting the heatsink |
-| Washer | M2 DIN 125 | 4 pcs | Mounting the heatsink |
-| Nut | M2 DIN 934 | 4 pcs | Mounting the heatsink |
-| Screw | M2x6 DIN 965 | 3 pcs | Mounting the internal strip to the module base |
-| Nut | M2 DIN 934 | 3 pcs | Mounting the internal strip to the module base |
-| Screw | M2x10 DIN 7985 | 4 pcs | Mounting the module cover to its base |
-| Washer | M2 DIN 125 | 4 pcs | Mounting the module cover to its base |
-| Nut | M2 DIN 934 | 4 pcs | Mounting the module cover to its base |
+| Screw | M2x5 DIN 7985 | 2 pcs | การติดตั้ง board กับ XS1 connector |
+| Nut | M2 DIN 934 | 2 pcs | การติดตั้ง board กับ XS1 connector |
+| Screw | M2x10 DIN 7985 | 1 pc | การติดตั้ง XS1 connector retainer |
+| Nut | M2 DIN 934 | 1 pc | การติดตั้ง XS1 connector retainer |
+| Screw | M3x8 DIN 965 | 2 pcs | การติดตั้ง module BARVINOK-5 RS-485 nano V2.1 |
+| Nut | M3 DIN 934 | 2 pcs | การติดตั้ง module BARVINOK-5 RS-485 nano V2.1 |
+| Screw | M2x5 DIN 7985 | 4 pcs | การติดตั้ง heatsink |
+| Washer | M2 DIN 125 | 4 pcs | การติดตั้ง heatsink |
+| Nut | M2 DIN 934 | 4 pcs | การติดตั้ง heatsink |
+| Screw | M2x6 DIN 965 | 3 pcs | การติดตั้ง internal strip เข้ากับ module base |
+| Nut | M2 DIN 934 | 3 pcs | การติดตั้ง internal strip เข้ากับ module base |
+| Screw | M2x10 DIN 7985 | 4 pcs | การติดตั้ง module cover เข้ากับ base |
+| Washer | M2 DIN 125 | 4 pcs | การติดตั้ง module cover เข้ากับ base |
+| Nut | M2 DIN 934 | 4 pcs | การติดตั้ง module cover เข้ากับ base |
 
 ## Wire Usage Details
 

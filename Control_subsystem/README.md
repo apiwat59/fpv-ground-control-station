@@ -1,33 +1,33 @@
 # Control_subsystem
 
-The control subsystem provides two-way data exchange via the ground control station's switching lines using the RS-485 standard between the operator's control panel and the control transmitter installed in the remote unit of the ground control station.
+Control subsystem ให้บริการแลกเปลี่ยนข้อมูลแบบสองทิศทาง (two-way data exchange) ผ่าน switching lines ของ ground control station โดยใช้มาตรฐาน RS-485 ระหว่าง operator's control panel และ control transmitter ที่ติดตั้งอยู่ใน remote unit ของ ground control station
 
-The control subsystem includes:
-- JR_module_adapter (on the control panel side)
-- TX_unit (on the remote unit side)
+Control subsystem ประกอบด้วย:
+- JR_module_adapter (ทางฝั่ง control panel)
+- TX_unit (ทางฝั่ง remote unit)
 
 ## Brief Technical Specifications
 
 | Parameter | Value | Note |
 |----------|---------|---------|
-| Control protocol | CRSF | Via S.Port |
-| Transmission interface | Differential signal of the RS-485 standard | Noise-immune, long lines |
-| Data transmission channel | Ground control station switching lines | Maximum length depends on cable type |
+| Control protocol | CRSF | ผ่าน S.Port |
+| Transmission interface | Differential signal ของมาตรฐาน RS-485 | Noise-immune, long lines |
+| Data transmission channel | Switching lines ของ ground control station | ความยาวสูงสุดขึ้นอยู่กับประเภทของ cable |
 | Operating mode | Two-way | Control + telemetry |
-| JR module adapter power supply | 5–8.4 V | From the control panel |
-| TX unit power supply | From the remote unit hub | Via XS2 |
-| Control transmitter TX module power supply | 8V | From the TX unit |
-| TX unit output voltage via XS3 connector | 8V | Maximum continuous current 2A |
-| Cooling | Passive | Heatsinks + ventilation holes |
+| JR module adapter power supply | 5–8.4 V | จาก control panel |
+| TX unit power supply | จาก remote unit hub | ผ่าน XS2 |
+| Control transmitter TX module power supply | 8V | จาก TX unit |
+| TX unit output voltage via XS3 connector | 8V | กระแสต่อเนื่องสูงสุด 2A |
+| Cooling | Passive | Heatsinks + ช่องระบายอากาศ |
 | Shielding | Partial | |
 
 ## Operating Principle and Architecture
 
-The control signal from the control panel is sent to the JR module adapter, where it is converted into a differential signal of the RS-485 standard. Next, the signal is transmitted through the ground control station's switching lines to the TX unit, where reverse conversion into a CRSF protocol signal occurs before being fed to the control transmitter. The return channel (telemetry) works similarly in the opposite direction.
+สัญญาณควบคุมจาก control panel จะถูกส่งไปยัง JR_module_adapter ซึ่งจะถูกแปลงเป็น differential signal ของมาตรฐาน RS-485 จากนั้นสัญญาณจะถูกส่งผ่าน switching lines ของ ground control station ไปยัง TX_unit ซึ่งจะเกิดการแปลงสัญญาณกลับ (reverse conversion) เป็นสัญญาณโปรโตคอล CRSF ก่อนที่จะส่งต่อไปยัง control transmitter สำหรับช่องสัญญาณขากลับ (telemetry) จะทำงานในลักษณะเดียวกันแต่ในทิศทางตรงกันข้าม
 
 <img width="800" alt="Block diagram of the control subsystem architecture" src="control_subsystem_architecture_block_diagram.JPG" />
 
-The detailed implementation of each device of the control subsystem is given in the corresponding sections:
+รายละเอียดการออกแบบและพัฒนาสำหรับแต่ละอุปกรณ์ของ control subsystem แสดงอยู่ในส่วนต่างๆ ดังนี้:
 
 * **[JR_module_adapter](JR_module_adapter/)**
 * **[TX_unit](TX_unit/)**

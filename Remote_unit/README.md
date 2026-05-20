@@ -1,32 +1,32 @@
 # Remote unit
 
-The remote unit is a functional component of the ground control station designed to integrate video reception systems, control signal transmission, and antenna-feeder equipment. The remote unit is a modular platform that allows configuration changes depending on the task, type of video system, or operating conditions.
+Remote unit คือ functional component ของ ground control station ที่ออกแบบมาเพื่อผสานรวม video reception systems, control signal transmission และ antenna-feeder equipment เข้าด้วยกัน Remote unit เป็น modular platform ที่ช่วยให้สามารถปรับเปลี่ยน configuration ได้ตามภารกิจ, ประเภทของ video system หรือสภาพการใช้งาน
 
 <img width="800" alt="Remote unit architecture" src="remote_unit_architecture.JPG" />
 
-The design of the remote unit ensures:
-- mechanical and electrical integration of remote unit peripherals
-- use of interchangeable TX and VRX units
-- configuration changes of peripheral devices without changing the architecture of other station subsystems
-- placement of high-frequency modules outside the station control unit
-- integration of additional antenna systems
-- operation in mobile and stationary modes
-- mounting on a mast or other supporting structures
-- quick transition of the station between transport and operational positions
+การออกแบบของ Remote unit ช่วยรองรับ:
+- mechanical and electrical integration ของ remote unit peripherals
+- การใช้ TX และ VRX units ที่สามารถสับเปลี่ยนกันได้
+- การปรับเปลี่ยน configuration ของ peripheral devices โดยไม่ต้องเปลี่ยนโครงสร้างของ station subsystems อื่นๆ
+- การติดตั้ง high-frequency modules ไว้ภายนอก station control unit
+- การผสานรวม antenna systems เพิ่มเติม
+- การทำงานใน mobile และ stationary modes
+- การติดตั้งบน mast หรือ supporting structures อื่นๆ
+- การปรับเปลี่ยนสถานะของสถานีอย่างรวดเร็วระหว่างตำแหน่ง transport และ operational
 
 ## Operating Modes
 
 ### Mobile Mode
 
-The remote unit can be used without mounting on a mast when operating in high-mobility conditions or when direct line of sight is available.
+Remote unit สามารถใช้งานได้โดยไม่ต้องติดตั้งบน mast เมื่อใช้งานในสภาวะที่มีความคล่องตัวสูง (high-mobility) หรือเมื่ออยู่ในระยะสายตาโดยตรง (direct line of sight)
 
 ### Stationary Mode
 
-To improve signal reception and transmission conditions, the remote unit can be mounted on a mast using a bracket along with additional antenna systems.
+เพื่อปรับปรุงสภาวะการรับและส่งสัญญาณ Remote unit สามารถติดตั้งบน mast ได้โดยใช้ bracket ร่วมกับ antenna systems เพิ่มเติม
 
 ### Note
 
-It is recommended to follow this order of manufacturing for the remote unit:
+แนะนำให้ผลิต Remote unit ตามลำดับขั้นตอนดังต่อไปนี้:
 
 1.	**[Remote unit hub](Remote_unit_hub/)**
 2.	**[Universal frame](Universal_frame/)**

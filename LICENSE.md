@@ -1,44 +1,44 @@
 # License Agreement for the Use of Materials
 
-This License Agreement (hereinafter referred to as the "Agreement") is entered into by and between DKB-1571 (hereinafter referred to as the "Licensor") and any person who accesses materials distributed by the Licensor (hereinafter referred to as the "User").
+สัญญาอนุญาตนี้ (ซึ่งต่อไปนี้จะเรียกว่า "Agreement") ทำขึ้นโดยและระหว่าง DKB-1571 (ซึ่งต่อไปนี้จะเรียกว่า "Licensor") และบุคคลใดๆ ที่เข้าถึง materials ที่จัดทำโดย Licensor (ซึ่งต่อไปนี้จะเรียกว่า "User")
 
-Materials include files, instructions, schematics, text documentation, graphics, models, drawings, software, and other supporting data (hereinafter referred to as "Materials").
+Materials รวมถึง files, instructions, schematics, text documentation, graphics, models, drawings, software และ supporting data อื่นๆ (ซึ่งต่อไปนี้จะเรียกว่า "Materials")
 
 ## 1. Subject of the Agreement
 
-1.1. The subject of this Agreement is the terms and conditions of the User's use of the Materials provided by the Licensor.
+1.1. วัตถุประสงค์ของ Agreement นี้คือข้อกำหนดและเงื่อนไขการใช้งาน Materials ของ User ที่ได้รับจาก Licensor
 
-1.2. Materials are provided exclusively for technical, educational, research, or other non-commercial use, in particular for the defense needs of Ukraine.
+1.2. Materials ได้รับการจัดหาให้เพื่อการใช้งานในด้าน technical, educational, research หรือการใช้งานอื่นๆ ที่ไม่ใช่ในเชิงพาณิชย์ (non-commercial) โดยเฉพาะอย่างยิ่งเพื่อความต้องการในการป้องกันประเทศของยูเครน
 
 ## 2. Conditions for Providing Materials
 
-2.1. Materials are provided on an "as is" basis. The Licensor makes no warranties, express or implied, regarding the suitability of the Materials for any specific purpose, their accuracy, completeness, relevance, or the absence of errors.
+2.1. Materials ถูกจัดเตรียมให้ตามสภาพที่เป็นอยู่ ("as is") โดย Licensor ไม่มีการรับประกันใดๆ ทั้งโดยชัดแจ้งหรือโดยนัย เกี่ยวกับความเหมาะสมของ Materials สำหรับวัตถุประสงค์เฉพาะใดๆ ความถูกต้อง ความสมบูรณ์ ความเกี่ยวข้อง หรือการปราศจากข้อผิดพลาด
 
-2.2. The User uses the Materials at their own risk. The Licensor shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use the Materials.
+2.2. User ใช้งาน Materials ภายใต้ความเสี่ยงของตนเอง โดย Licensor จะไม่รับผิดชอบต่อความเสียหายใดๆ ทั้งทางตรง ทางอ้อม ความเสียหายที่เกิดขึ้นโดยไม่ได้ตั้งใจ หรือความเสียหายที่เป็นผลสืบเนื่องจากการใช้หรือการไม่สามารถใช้งาน Materials ได้
 
-2.3. The User is solely responsible for compliance with safety requirements, legislation, and technical standards during the manufacture, modification, or operation of products created on the basis of the Materials.
+2.3. User เป็นผู้รับผิดชอบแต่เพียงผู้เดียวในการปฏิบัติตามข้อกำหนดด้านความปลอดภัย กฎหมาย และมาตรฐานทางเทคนิค ในระหว่างการผลิต การปรับปรุงแก้ไข หรือการใช้งานผลิตภัณฑ์ที่สร้างขึ้นโดยอ้างอิงจาก Materials
 
 ## 3. Right to Distribute
 
-3.1. The right to distribute the Materials belongs exclusively to DKB-1571.
+3.1. สิทธิ์ในการเผยแพร่ Materials เป็นของ DKB-1571 แต่เพียงผู้เดียว
 
-3.2. Redistribution of the Materials in any form is not allowed, except for sharing links to the official sources of DKB-1571.
+3.2. ไม่อนุญาตให้ทำการเผยแพร่ Materials ซ้ำ (Redistribution) ในรูปแบบใดๆ เว้นแต่การแบ่งปัน links ไปยังแหล่งที่มาอย่างเป็นทางการของ DKB-1571
 
-3.3. The User has the right to share links to the official repository or other official resources of DKB-1571 where the Materials are hosted.
+3.3. User มีสิทธิ์แบ่งปัน links ไปยัง repository อย่างเป็นทางการหรือ resources ทางการอื่นๆ ของ DKB-1571 ที่มี Materials จัดเก็บอยู่
 
 ## 4. Intellectual Property
 
-4.1. The exclusive proprietary intellectual property rights to the Materials and their modifications belong to DKB-1571.
+4.1. สิทธิ์ในทรัพย์สินทางปัญญาที่เป็นกรรมสิทธิ์แต่เพียงผู้เดียวใน Materials และการปรับปรุงแก้ไขใดๆ เป็นของ DKB-1571
 
-4.2. This Agreement does not provide for the transfer of any proprietary intellectual property rights to the User, except for the limited right to use the Materials in accordance with the terms of this Agreement.
+4.2. Agreement นี้ไม่ได้กำหนดให้มีการโอนสิทธิ์ในทรัพย์สินทางปัญญาใดๆ ให้แก่ User เว้นแต่สิทธิ์ที่จำกัดในการใช้ Materials ตามเงื่อนไขของ Agreement นี้
 
-4.3. The manufacture of products based on the Materials is permitted exclusively for non-commercial use, in particular for the defense needs of Ukraine.
+4.3. การผลิตผลิตภัณฑ์ตาม Materials ได้รับอนุญาตให้ทำได้เพื่อการใช้งานที่ไม่ใช่ในเชิงพาณิชย์ (non-commercial) เท่านั้น โดยเฉพาะอย่างยิ่งเพื่อความต้องการในการป้องกันประเทศของยูเครน
 
 ## 5. Restrictions on Commercial Use
 
-5.1. Any commercial use of the Materials, their modifications, as well as products manufactured on their basis, is prohibited.
+5.1. ห้ามใช้ Materials การปรับปรุงแก้ไขของ Materials ตลอดจนผลิตภัณฑ์ที่ผลิตขึ้นโดยอ้างอิงจาก Materials ในเชิงพาณิชย์ (commercial use) ทุกกรณี
 
-5.2. Commercial use includes, but is not limited to:
+5.2. Commercial use รวมถึง แต่ไม่จำกัดเพียง:
 
 - sale
 - resale
@@ -46,18 +46,18 @@ Materials include files, instructions, schematics, text documentation, graphics,
 - rental/leasing
 - mass production
 - commercial distribution
-- providing paid services using the Materials or products created on their basis
+- การให้บริการที่มีค่าใช้จ่ายโดยใช้ Materials หรือผลิตภัณฑ์ที่สร้างขึ้นโดยอ้างอิงจาก Materials
 
-5.3. Any commercial use is possible only with the separate written consent of DKB-1571.
+5.3. การใช้งานในเชิงพาณิชย์ใดๆ จะสามารถทำได้ต่อเมื่อได้รับความยินยอมเป็นลายลักษณ์อักษรแยกต่างหากจาก DKB-1571 เท่านั้น
 
 ## 6. General Provisions
 
-6.1. DKB-1571 reserves the right to make changes to this Agreement at any time without prior notice to the User. The updated version of the Agreement becomes effective upon its publication.
+6.1. DKB-1571 ขอสงวนสิทธิ์ในการแก้ไขเปลี่ยนแปลง Agreement นี้ได้ตลอดเวลาโดยไม่ต้องแจ้งให้ User ทราบล่วงหน้า เวอร์ชันที่อัปเดตของ Agreement จะมีผลบังคับใช้ทันทีเมื่อมีการเผยแพร่
 
-6.2. Continued use of the Materials after the publication of an updated version of the Agreement constitutes the User's acceptance of its terms.
+6.2. การใช้งาน Materials อย่างต่อเนื่องหลังจากการเผยแพร่ Agreement เวอร์ชันที่อัปเดต จะถือว่า User ยอมรับข้อกำหนดเหล่านั้น
 
-6.3. This Agreement is governed by the laws of Ukraine.
+6.3. Agreement นี้อยู่ภายใต้บังคับกฎหมายของยูเครน
 
-6.4. Any disputes arising in connection with this Agreement shall be resolved in accordance with the current legislation of Ukraine.
+6.4. ข้อพิพาทใดๆ ที่เกิดขึ้นในส่วนที่เกี่ยวข้องกับ Agreement นี้จะได้รับการแก้ไขตามกฎหมายปัจจุบันของยูเครน
 
-6.5. The invalidity of individual provisions of this Agreement shall not affect the validity of its other provisions.
+6.5. ความไม่สมบูรณ์ของข้อกำหนดเฉพาะใดๆ ใน Agreement นี้จะไม่ส่งผลกระทบต่อความสมบูรณ์ของข้อกำหนดอื่นๆ ที่เหลืออยู่

@@ -1,6 +1,6 @@
 # Remote unit hub
 
-The remote unit hub provides power distribution, signal concentration, and switching of remote unit peripheral devices.
+Remote unit hub ทำหน้าที่ในส่วนของ power distribution, signal concentration และการ switching อุปกรณ์ peripheral devices ของ remote unit
 
 <img width="800" alt="General view of the remote unit hub" src="picture/general_view_concentrator_of_the_remote_unit.png" />
 
@@ -8,41 +8,41 @@ The remote unit hub provides power distribution, signal concentration, and switc
 
 | Parameter | Value | Note |
 | :--- | :--- | :---: |
-| Input voltage | 6S Li-ion/LiPo battery (Min. 22.2 V, Max. 25.2 V) | Power supply via connector XS1 from the station control unit |
-| Power bus | +BAT | Direct from the station control unit battery |
-| Auxiliary bus | +5 V | Formed by a DC-DC converter |
+| Input voltage | 6S Li-ion/LiPo battery (Min. 22.2 V, Max. 25.2 V) | จ่ายไฟผ่าน connector XS1 จาก station control unit |
+| Power bus | +BAT | ต่อตรงจากแบตเตอรี่ของ station control unit |
+| Auxiliary bus | +5 V | แปลงแรงดันโดย DC-DC converter |
 | Number of video inputs | 2 | XS3, XS4 |
-| Input video signal type | Analog composite (CVBS) | Analog composite signal |
-| Output video signal type | Analog differential | Signal conversion and amplification by module VA-Do-2/2 followed by transmission over twisted pair |
-| Video input selection | Remote | Switching from the station control unit side |
-| VRX control | Supported | Via ELRS Backpack (video inputs XS3 or XS4) or wired connection (XS3 only) |
-| TX interface | Digital (differential) | XS2 data transmission via twisted pair |
-| Power protection | TVS diode | Protection against inductive surges and overvoltage |
-| Cooling | Passive | Copper heatsinks + ventilation holes |
+| Input video signal type | Analog composite (CVBS) | สัญญาณ Analog composite |
+| Output video signal type | Analog differential | แปลงและขยายสัญญาณโดย module VA-Do-2/2 จากนั้นส่งสัญญาณผ่าน twisted pair |
+| Video input selection | Remote | ควบคุมการ switching จากฝั่ง station control unit |
+| VRX control | Supported | ผ่าน ELRS Backpack (video inputs XS3 หรือ XS4) หรือผ่านการเชื่อมต่อแบบสาย (XS3 เท่านั้น) |
+| TX interface | Digital (differential) | การส่งข้อมูลของ XS2 ผ่าน twisted pair |
+| Power protection | TVS diode | ป้องกันไฟกระชากแบบเหนี่ยวนำ (inductive surges) และแรงดันเกิน (overvoltage) |
+| Cooling | Passive | Copper heatsinks + ช่องระบายอากาศ |
 | Shielding | Yes | Copper shields |
 
 ### Interfaces
 
 | Connector | Application | Main Signals | Note |
 | :--- | :--- | :---: | :---: |
-| XS1 (GX20-8) | Connection to the control unit | +BAT, GND, differential lines | Power and signal exchange |
-| XS2 (GX12-6) | TX unit connection | +BAT, GND, differential line | |
-| XS3 (GX12-6) | Video input 1, VRX1 connection | +BAT, GND, CVBS, differential line | First video input, supports control via twisted pair |
-| XS4 (GX12-6) | Video input 2, VRX2 connection | +BAT, GND, CVBS | Auxiliary video input |
+| XS1 (GX20-8) | การเชื่อมต่อไปยัง control unit | +BAT, GND, differential lines | การส่งกำลังไฟและการแลกเปลี่ยนสัญญาณ |
+| XS2 (GX12-6) | การเชื่อมต่อ TX unit | +BAT, GND, differential line | |
+| XS3 (GX12-6) | ช่องสัญญาณ Video input 1, การเชื่อมต่อ VRX1 | +BAT, GND, CVBS, differential line | ช่องสัญญาณ Video input ช่องแรก, รองรับการควบคุมผ่าน twisted pair |
+| XS4 (GX12-6) | ช่องสัญญาณ Video input 2, การเชื่อมต่อ VRX2 | +BAT, GND, CVBS | ช่องสัญญาณ Video input สำรอง |
 
 ## Schematic Design and Functionality of the Remote Unit Hub
 
 <img width="800" alt="Schematic diagram of the remote unit hub" src="schematic_diagram/schematic_diagram_concentrator_of_the_remote_unit.JPG" />
 
-The remote unit hub is powered through the XS1 connector, which receives voltage from the station control unit powered by a 6S3P Li-ion/LiPo battery pack. From the XS1 connector, power is supplied to the GND bus and the +BAT bus, from where it branches to the XS2, XS3, and XS4 connectors to power the peripheral devices and the voltage converter, which generates the +5V bus voltage powering the video amplifier. To protect the peripheral devices of the remote unit from transient processes in the line connecting it to the station control unit (caused by its inductive component), a semiconductor transient voltage suppressor (TVS) of type 1.5KE33A is used.
+Remote unit hub รับไฟเลี้ยงผ่าน connector XS1 ซึ่งได้รับแรงดันไฟฟ้าจาก station control unit ที่จ่ายไฟด้วย battery pack แบบ 6S3P Li-ion/LiPo จาก connector XS1 ไฟจะถูกจ่ายไปยัง GND bus และ +BAT bus จากนั้นจะแยกไปยัง connectors XS2, XS3 และ XS4 เพื่อจ่ายไฟให้กับ peripheral devices และ voltage converter ซึ่งทำหน้าที่แปลงแรงดันและจ่ายไปยัง +5V bus เพื่อจ่ายไฟให้กับ video amplifier ทั้งนี้ เพื่อป้องกัน peripheral devices ของ remote unit จาก transient processes ในสายเชื่อมต่อที่เชื่อมไปยัง station control unit (ซึ่งเกิดจากส่วนประกอบที่เป็น inductive) จึงมีการใช้ semiconductor transient voltage suppressor (TVS) รุ่น 1.5KE33A
 
-The TX unit is connected to the XS2 connector, and information exchange between it and the station control unit is performed via a twisted pair.
+TX unit จะเชื่อมต่อเข้ากับ connector XS2 และทำการแลกเปลี่ยนข้อมูลระหว่างตัวมันกับ station control unit ผ่าน twisted pair
 
-VRX units or other video signal sources are connected to the XS3 and XS4 connectors. The composite video signal from the XS3 and XS4 connectors goes to the video amplifier, which converts the composite signal to differential and transmits it via a twisted pair to the station control unit. There, after reverse conversion, it is distributed to the peripheral video devices of the station control unit. Selection of the active video input (XS3 or XS4) is done from the station control unit side. Video input XS3 has the option of additional information exchange with the station control unit via twisted pair for remote control of the video receiver.
+VRX units หรือแหล่งสัญญาณภาพอื่นๆ จะเชื่อมต่อเข้ากับ connectors XS3 และ XS4 สัญญาณ composite video จาก connectors XS3 และ XS4 จะส่งไปยัง video amplifier ซึ่งจะทำหน้าที่แปลงสัญญาณ composite ให้เป็น differential แล้วส่งผ่าน twisted pair ไปยัง station control unit โดยเมื่อผ่านกระบวนการแปลงสัญญาณกลับ (reverse conversion) ที่ฝั่งสถานีแล้ว สัญญาณภาพจะถูกส่งแยกไปยัง peripheral video devices ต่างๆ ของ station control unit ทั้งนี้ การเลือกช่องสัญญาณ video input ที่ใช้งานอยู่ (XS3 หรือ XS4) จะทำจากฝั่งของ station control unit และสำหรับช่องสัญญาณ video input XS3 จะมี option ในการแลกเปลี่ยนข้อมูลเพิ่มเติมกับ station control unit ผ่าน twisted pair เพื่อรองรับการควบคุมตัวรับสัญญาณวิดีโอจากระยะไกล (remote control)
 
-Temperature stability of the video amplifier and voltage converter is ensured by copper cooling heatsinks and ventilation holes in the housing of the remote unit hub. The copper heatsinks are connected to the common ground (GND) bus, and together with the side shield of the hub board and the shield on the hub cover (which are also connected to the GND bus) minimize parasitic noise/interference on the video amplifier.
+การควบคุมอุณหภูมิ (temperature stability) ของ video amplifier และ voltage converter ได้รับการดูแลผ่าน copper cooling heatsinks และช่องระบายอากาศบน housing ของ remote unit hub โดย copper heatsinks จะถูกเชื่อมต่อเข้ากับ common ground (GND) bus และเมื่อทำงานร่วมกับ side shield ของ hub board และ shield บน hub cover (ซึ่งเชื่อมต่อเข้ากับ GND bus เช่นกัน) จะช่วยลดสัญญาณรบกวน (parasitic noise/interference) ใน video amplifier ให้เหลือน้อยที่สุด
 
-The remote unit hub has a rather high component density and involves working with different voltage levels. Successful assembly of the device requires schematic reading skills and intermediate experience in electronics assembly work.
+Remote unit hub มีความหนาแน่นของชิ้นส่วนประกอบค่อนข้างสูงและมีการทำงานกับระดับแรงดันไฟหลายระดับ การประกอบอุปกรณ์ให้ประสบความสำเร็จจำเป็นต้องใช้ทักษะในการอ่าน schematic และประสบการณ์ระดับกลางในการประกอบอุปกรณ์อิเล็กทรอนิกส์ (electronics assembly)
 
 <img width="600" alt="Assembly process of the remote unit hub" src="picture/installation_view.jpg" />
 
@@ -50,21 +50,21 @@ The remote unit hub has a rather high component density and involves working wit
 
 | Part Name | Qty | Note |
 | :--- | :--- | :---: |
-| VideoLink VA-Do-2/2 Video Amplifier | 1 pc | Ukrainian-made module [purchase VideoLink VA-Do-2/2 from the manufacturer](https://sezam.video/shop/videopidsilyuvach-z-simetrichnim-vihodom-aktivniy-balun-videolink-va-do-22/) |
-| GUTI ELECTRONICS mBEC12S Voltage Converter | 1 pc | Ukrainian analog of Matek BEC 12S [purchase GUTI ELECTRONICS mBEC12S from the manufacturer](https://prom.ua/ua/p2814749850-otechestvennyj-analog-matek.html) |
+| VideoLink VA-Do-2/2 Video Amplifier | 1 pc | module ผลิตในประเทศยูเครน [ซื้อ VideoLink VA-Do-2/2 จากผู้ผลิต](https://sezam.video/shop/videopidsilyuvach-z-simetrichnim-vihodom-aktivniy-balun-videolink-va-do-22/) |
+| GUTI ELECTRONICS mBEC12S Voltage Converter | 1 pc | ชิ้นส่วนเทียบเท่าของยูเครนสำหรับ Matek BEC 12S [ซื้อ GUTI ELECTRONICS mBEC12S จากผู้ผลิต](https://prom.ua/ua/p2814749850-otechestvennyj-analog-matek.html) |
 | Panel mount plug GX20-8 pin (male) | 1 pc | XS1 |
 | Panel mount plug GX12-6 pin (male) | 3 pcs | XS2-XS4 |
 | Single-sided copper clad laminate 1.5 mm | 34 mm x 16 mm | Power bus board |
 | TVS Diode 1.5KE33A DO201AD | 1 pc | |
-| Self-adhesive copper tape (width 50 mm; thickness 0.05 mm) | 156 mm | Shield for the remote unit hub cover |
-| Self-adhesive copper tape (width 8 mm; thickness 0.05 mm) | 286 mm | Side shield of the hub board |
-| Sheet copper 0.8 mm thick | 100 mm x 38 mm | Large heatsink for the hub board |
+| Self-adhesive copper tape (width 50 mm; thickness 0.05 mm) | 156 mm | Shield สำหรับ remote unit hub cover |
+| Self-adhesive copper tape (width 8 mm; thickness 0.05 mm) | 286 mm | Side shield ของ hub board |
+| Sheet copper 0.8 mm thick | 100 mm x 38 mm | Large heatsink สำหรับ hub board |
 | Sheet copper 0.8 mm thick | 30 mm x 19 mm | Voltage converter heatsink |
 | Sheet copper 0.8 mm thick | 48 mm x 26 mm | Video amplifier heatsink |
-| Silicone thermal pad 1 mm 6W/m.k | 18 mm x 16 mm | Heat dissipation from the voltage converter to the large heatsink of the hub board |
-| Silicone thermal pad 1.5 mm 6W/m.k | 18 mm x 16 mm | Heat dissipation from the voltage converter to its heatsink |
-| Silicone thermal pad 2 mm 6W/m.k | 30 mm x 27 mm - 2 pcs | Heat dissipation from the video amplifier to the large heatsink of the hub board |
-| Silicone thermal pad 1.5 mm 6W/m.k | 27 mm x 27 mm | Heat dissipation from the video amplifier to its heatsink |
+| Silicone thermal pad 1 mm 6W/m.k | 18 mm x 16 mm | การระบายความร้อนจาก voltage converter ไปยัง large heatsink ของ hub board |
+| Silicone thermal pad 1.5 mm 6W/m.k | 18 mm x 16 mm | การระบายความร้อนจาก voltage converter ไปยัง heatsink ของตัวเอง |
+| Silicone thermal pad 2 mm 6W/m.k | 30 mm x 27 mm - 2 pcs | การระบายความร้อนจาก video amplifier ไปยัง large heatsink ของ hub board |
+| Silicone thermal pad 1.5 mm 6W/m.k | 27 mm x 27 mm | การระบายความร้อนจาก video amplifier ไปยัง heatsink ของตัวเอง |
 | Copper wire 20 AWG silicone insulated, black | 810 mm | |
 | Copper wire 20 AWG silicone insulated, red | 810 mm | |
 | Copper wire 26 AWG silicone insulated, black | 120 mm | |
@@ -107,30 +107,30 @@ Material: coPET black MonoFilament
 
 | Part Name | Type/Size | Qty | Note |
 | :--- | :--- | :---: | :---: |
-| Screw | M3x25 DIN 965 | 3 pcs | Mounting the hub connector block cover |
-| Screw | M3x40 DIN 965 | 3 pcs | Mounting the hub connector block cover |
-| Nut | M3 DIN 934 | 6 pcs | Mounting the hub connector block cover |
-| Screw | M2x8 DIN 7985 | 3 pcs | Mounting the large heatsink to the hub board |
-| Washer | M2 DIN 125 | 3 pcs | Mounting the large heatsink to the hub board |
-| Nut | M2 DIN 934 | 3 pcs | Mounting the large heatsink to the hub board |
-| Screw | M2x8 DIN 7985 | 4 pcs | Mounting the VA-Do-2/2 module heatsink to the hub board |
-| Washer | M2 DIN 125 | 4 pcs | Mounting the VA-Do-2/2 module heatsink to the hub board |
-| Nut | M2 DIN 934 | 4 pcs | Mounting the VA-Do-2/2 module heatsink to the hub board |
-| Screw | M2x8 DIN 7985 | 4 pcs | Mounting the mBEC 12S voltage converter heatsink to the hub board |
-| Washer | M2 DIN 125 | 4 pcs | Mounting the mBEC 12S voltage converter heatsink to the hub board |
-| Nut | M2 DIN 934 | 4 pcs | Mounting the mBEC 12S voltage converter heatsink to the hub board |
-| Screw | M2x6 DIN 7985 | 4 pcs | Mounting the power bus board to the hub board |
-| Washer | M2 DIN 125 | 4 pcs | Mounting the power bus board to the hub board |
-| Nut | M2 DIN 934 | 4 pcs | Mounting the power bus board to the hub board |
-| Screw | M3x18 DIN 7985 A2 | 6 pcs | Mounting the hub board to the base |
-| Washer | M3 DIN 125 | 12 pcs | Mounting the hub board to the base (2 washers per screw) |
-| Nut | M3 DIN 934 | 6 pcs | Mounting the hub board to the base |
-| Screw | M3x30 DIN 965 | 5 pcs | Mounting the hub cover |
-| Nut | M3 DIN 934 | 5 pcs | Mounting the hub cover |
-| Screw | M3x20 DIN 7985 A2 | 5 pcs | Additional mounting in the hub cover |
-| Washer | M3 DIN 9021 | 5 pcs | Additional mounting in the hub cover |
-| Nut | M3 DIN 934 | 5 pcs | Additional mounting in the hub cover |
-| Wing nut | M3 DIN 315 | 5 pcs | Additional mounting in the hub cover |
+| Screw | M3x25 DIN 965 | 3 pcs | ยึด hub connector block cover |
+| Screw | M3x40 DIN 965 | 3 pcs | ยึด hub connector block cover |
+| Nut | M3 DIN 934 | 6 pcs | ยึด hub connector block cover |
+| Screw | M2x8 DIN 7985 | 3 pcs | ยึด large heatsink เข้ากับ hub board |
+| Washer | M2 DIN 125 | 3 pcs | ยึด large heatsink เข้ากับ hub board |
+| Nut | M2 DIN 934 | 3 pcs | ยึด large heatsink เข้ากับ hub board |
+| Screw | M2x8 DIN 7985 | 4 pcs | ยึด VA-Do-2/2 module heatsink เข้ากับ hub board |
+| Washer | M2 DIN 125 | 4 pcs | ยึด VA-Do-2/2 module heatsink เข้ากับ hub board |
+| Nut | M2 DIN 934 | 4 pcs | ยึด VA-Do-2/2 module heatsink เข้ากับ hub board |
+| Screw | M2x8 DIN 7985 | 4 pcs | ยึด mBEC 12S voltage converter heatsink เข้ากับ hub board |
+| Washer | M2 DIN 125 | 4 pcs | ยึด mBEC 12S voltage converter heatsink เข้ากับ hub board |
+| Nut | M2 DIN 934 | 4 pcs | ยึด mBEC 12S voltage converter heatsink เข้ากับ hub board |
+| Screw | M2x6 DIN 7985 | 4 pcs | ยึด power bus board เข้ากับ hub board |
+| Washer | M2 DIN 125 | 4 pcs | ยึด power bus board เข้ากับ hub board |
+| Nut | M2 DIN 934 | 4 pcs | ยึด power bus board เข้ากับ hub board |
+| Screw | M3x18 DIN 7985 A2 | 6 pcs | ยึด hub board เข้ากับ base |
+| Washer | M3 DIN 125 | 12 pcs | ยึด hub board เข้ากับ base (washers 2 ตัวต่อ screw 1 ตัว) |
+| Nut | M3 DIN 934 | 6 pcs | ยึด hub board เข้ากับ base |
+| Screw | M3x30 DIN 965 | 5 pcs | ยึด hub cover |
+| Nut | M3 DIN 934 | 5 pcs | ยึด hub cover |
+| Screw | M3x20 DIN 7985 A2 | 5 pcs | การยึดเพิ่มเติมใน hub cover |
+| Washer | M3 DIN 9021 | 5 pcs | การยึดเพิ่มเติมใน hub cover |
+| Nut | M3 DIN 934 | 5 pcs | การยึดเพิ่มเติมใน hub cover |
+| Wing nut | M3 DIN 315 | 5 pcs | การยึดเพิ่มเติมใน hub cover |
 
 
 ## Detailed Wire Consumption
@@ -138,8 +138,8 @@ Material: coPET black MonoFilament
 XS1
 | Type | Length | Note |
 | :--- | :--- | :---: |
-| 20 AWG black | 170 mm | XS1 - GND bus of the hub board |
-| 20 AWG red | 170 mm | XS1 - +BAT bus of the hub board |
+| 20 AWG black | 170 mm | XS1 - GND bus ของ hub board |
+| 20 AWG red | 170 mm | XS1 - +BAT bus ของ hub board |
 | 26 AWG green | 150 mm | XS1 - VA-Do-2/2 |
 | 26 AWG blue | 150 mm | XS1 - VA-Do-2/2 |
 | 26 AWG green | 60 mm | XS1 - XS2 |
@@ -150,43 +150,43 @@ XS1
 XS2
 | Type | Length | Note |
 | :--- | :--- | :---: |
-| 20 AWG black | 190 mm | XS2 - GND bus of the hub board |
-| 20 AWG red | 190 mm | XS2 - +BAT bus of the hub board |
+| 20 AWG black | 190 mm | XS2 - GND bus ของ hub board |
+| 20 AWG red | 190 mm | XS2 - +BAT bus ของ hub board |
 
 XS3
 | Type | Length | Note |
 | :--- | :--- | :---: |
-| 20 AWG black | 220 mm | XS3 - GND bus of the hub board |
-| 20 AWG red | 220 mm | XS3 - +BAT bus of the hub board |
+| 20 AWG black | 220 mm | XS3 - GND bus ของ hub board |
+| 20 AWG red | 220 mm | XS3 - +BAT bus ของ hub board |
 | RG-316 | 250 mm | XS3 - VA-Do-2/2 |
 
 XS4
 | Type | Length | Note |
 | :--- | :--- | :---: |
-| 20 AWG black | 230 mm | XS4 - GND bus of the hub board |
-| 20 AWG red | 230 mm | XS4 - +BAT bus of the hub board |
+| 20 AWG black | 230 mm | XS4 - GND bus ของ hub board |
+| 20 AWG red | 230 mm | XS4 - +BAT bus ของ hub board |
 | RG-316 | 250 mm | XS3 - VA-Do-2/2 |
 
 mBEC 12S Voltage Converter
 | Type | Length | Note |
 | :--- | :--- | :---: |
-| 26 AWG black | 60 mm | mBEC 12S - GND bus of the hub board |
-| 26 AWG red | 60 mm | mBEC 12S - +BAT bus of the hub board |
-| 26 AWG green | 60 mm | mBEC 12S - +5V bus of the hub board |
+| 26 AWG black | 60 mm | mBEC 12S - GND bus ของ hub board |
+| 26 AWG red | 60 mm | mBEC 12S - +BAT bus ของ hub board |
+| 26 AWG green | 60 mm | mBEC 12S - +5V bus ของ hub board |
 
 VA-Do-2/2 Module
 | Type | Length | Note |
 | :--- | :--- | :---: |
-| 26 AWG black | 60 mm | VA-Do-2/2 - GND bus of the hub board |
-| 26 AWG green | 60 mm | VA-Do-2/2 - +5V bus of the hub board |
-| 28 AWG black | 50 mm | VA-Do-2/2 - RG-316 cable shield from XS3 |
-| 28 AWG black | 50 mm | VA-Do-2/2 - RG-316 cable shield from XS4 |
+| 26 AWG black | 60 mm | VA-Do-2/2 - GND bus ของ hub board |
+| 26 AWG green | 60 mm | VA-Do-2/2 - +5V bus ของ hub board |
+| 28 AWG black | 50 mm | VA-Do-2/2 - RG-316 cable shield จาก XS3 |
+| 28 AWG black | 50 mm | VA-Do-2/2 - RG-316 cable shield จาก XS4 |
 
 Heatsinks and Shields
 | Type | Length | Note |
 | :--- | :--- | :---: |
-| 28 AWG black | 170 mm | Large heatsink of the hub board - GND bus of the hub board |
-| 28 AWG black | 60 mm | VA-Do-2/2 module heatsink - GND bus of the hub board |
-| 28 AWG black | 60 mm | mBEC 12S voltage converter heatsink - GND bus of the hub board |
-| 28 AWG black | 120 mm | Side shield of the hub board - GND bus of the hub board |
-| 28 AWG black | 170 mm | Front shield on the hub cover - GND bus of the hub board |
+| 28 AWG black | 170 mm | Large heatsink ของ hub board - GND bus ของ hub board |
+| 28 AWG black | 60 mm | VA-Do-2/2 module heatsink - GND bus ของ hub board |
+| 28 AWG black | 60 mm | mBEC 12S voltage converter heatsink - GND bus ของ hub board |
+| 28 AWG black | 120 mm | Side shield ของ hub board - GND bus ของ hub board |
+| 28 AWG black | 170 mm | Front shield บน hub cover - GND bus ของ hub board |

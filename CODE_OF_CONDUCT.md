@@ -1,96 +1,96 @@
-# DKB-1571 Community Code of Conduct (GCS "HALYT" Project)
+# ข้อพึงปฏิบัติของชุมชน DKB-1571 (โครงการ GCS "HALYT")
 
 ## Philosophy of the GCS "HALYT" Project
 
-GCS "HALYT" is a modular system created to ensure a high level of reliability, maintainability, and accessibility of reproduction without losing technical quality.
+GCS "HALYT" คือ modular system ที่ถูกสร้างขึ้นมาเพื่อให้มั่นใจใน reliability, maintainability และ accessibility of reproduction ในระดับสูง โดยไม่สูญเสีย technical quality
 
-The project is based on the principles of practical feasibility and proven technical solutions.
+โครงการนี้ตั้งอยู่บนหลักการของความเป็นไปได้ในทางปฏิบัติและ proven technical solutions
 
 ### Key Guidelines
 
 * **Quality and Accessibility**  
-  GCS "HALYT" can be manufactured by a wide range of specialists in military-field, civilian, or volunteer workshops with a medium level of equipment.
+  GCS "HALYT" สามารถผลิตได้โดยผู้เชี่ยวชาญในหลากหลายสาขา ไม่ว่าจะเป็นในโรงเวิร์กชอปภาคสนามทางการทหาร พลเรือน หรืออาสาสมัคร ที่มีอุปกรณ์ระดับปานกลาง
 
 * **Priority of Practical Solutions**  
-  Any modifications, recommendations, or technical solutions are evaluated primarily from the standpoint of practical feasibility and applicability in real-world scenarios.
+  การแก้ไขดัดแปลง คำแนะนำ หรือ technical solutions ใดๆ จะได้รับการประเมินจากมุมมองของความเป็นไปได้ในทางปฏิบัติและการนำไปใช้งานได้จริงในสถานการณ์จริงเป็นหลัก
 
 * **Empirical Approach**  
-  Preference is given to proven solutions backed by practice, testing, or real operational experience.
+  จะให้ความสำคัญเป็นอันดับแรกกับ solutions ที่ผ่านการพิสูจน์แล้ว ซึ่งได้รับการสนับสนุนจากการปฏิบัติ การทดสอบ หรือประสบการณ์ในการใช้งานจริง
 
 * **Support for Domestic Manufacturers**  
-  Whenever possible, preference in the project is given to components and solutions of Ukrainian manufacture.
+  หากเป็นไปได้ โครงการนี้จะให้ความสำคัญกับ components และ solutions ที่ผลิตในยูเครนเป็นอันดับแรก
 
 ---
 
 ## 1. Technical Culture
 
 * **Engineering Approach**  
-  We value reasoned criticism, accurate calculations, verified data, and constructive technical discussions.
+  เราให้คุณค่ากับคำวิจารณ์ที่มีเหตุผล การคำนวณที่แม่นยำ ข้อมูลที่ได้รับการตรวจสอบ และการอภิปรายทางเทคนิคที่สร้างสรรค์
 
 * **Mutual Respect**  
-  Respect the experience, time, and contribution of other community members. Insults, discrimination, provocations, and personal attacks are unacceptable.
+  เคารพในประสบการณ์ เวลา และผลงานของสมาชิกคนอื่นๆ ในชุมชน การดูถูก การเลือกปฏิบัติ การยั่วยุ และการโจมตีส่วนบุคคลถือเป็นสิ่งที่ไม่สามารถยอมรับได้
 
 * **Knowledge Sharing**  
-  If you have practical experience or technical knowledge, share them. The development of the project is based on the mutual exchange of knowledge and practice.
+  หากคุณมีประสบการณ์ในทางปฏิบัติหรือความรู้ทางเทคนิค โปรดแบ่งปัน การพัฒนาของโครงการนี้ขึ้นอยู่กับการแลกเปลี่ยนความรู้และการปฏิบัติซึ่งกันและกัน
 
 ---
 
 ## 2. Safety and OPSEC
 
-The specific nature of the project requires compliance with basic information security rules.
+ลักษณะเฉพาะของโครงการนี้กำหนดให้ต้องปฏิบัติตามกฎพื้นฐานด้านความปลอดภัยของข้อมูล
 
-### Prohibited:
+### สิ่งต้องห้าม:
 
-* publishing information that could reveal:
+* การเผยแพร่ข้อมูลที่อาจเปิดเผยสิ่งต่อไปนี้:
   * locations,
-  * faces of personnel,
-  * operating parameters of communication systems (except for publicly available or generally accepted technical solutions);
-  * configurations or other sensitive data that could compromise user safety;
+  * ใบหน้าของบุคลากร,
+  * operating parameters ของ communication systems (ยกเว้น technical solutions ที่เผยแพร่ต่อสาธารณะหรือยอมรับกันโดยทั่วไปอยู่แล้ว);
+  * configurations หรือข้อมูลที่มีความละเอียดอ่อนอื่นๆ ซึ่งอาจส่งผลกระทบต่อความปลอดภัยของผู้ใช้;
 
-* posting photos or videos with geotags, metadata (EXIF), or recognizable landmarks without prior checking;
+* การโพสต์ภาพถ่ายหรือวิดีโอที่มี geotags, metadata (EXIF) หรือสถานที่สำคัญที่ระบุตัวตนได้โดยไม่ได้ตรวจสอบล่วงหน้า;
 
-* sharing unverified technical recommendations that could lead to:
-  * damage to equipment,
-  * loss of system functionality,
-  * injury to people.
+* การแบ่งปันคำแนะนำทางเทคนิคที่ไม่ได้รับการยืนยัน ซึ่งอาจนำไปสู่:
+  * ความเสียหายของอุปกรณ์,
+  * การสูญเสียฟังก์ชันการทำงานของระบบ,
+  * การบาดเจ็บของผู้คน
 
-Information hygiene and responsibility are mandatory for all community members.
+สุขอนามัยของข้อมูลและความรับผิดชอบเป็นสิ่งจำเป็นสำหรับสมาชิกทุกคนในชุมชน
 
 ---
 
 ## 3. License Compliance
 
-All project materials are distributed in accordance with the terms of the license located in the repository.
+เอกสารและวัสดุทั้งหมดของโครงการได้รับการเผยแพร่ตามข้อกำหนดของ license ที่อยู่ใน repository
 
-* Respect authorship and credit original sources when using third-party technical solutions or materials.
+* เคารพในความเป็นผู้สร้างสรรค์ผลงานและอ้างอิงแหล่งที่มาดั้งเดิมเมื่อใช้ technical solutions หรือวัสดุอุปกรณ์ของบุคคลที่สาม
 
-* Technical improvements and modifications should be documented in a way that allows them to be reproduced by other community members.
+* การปรับปรุงทางเทคนิคและการแก้ไขดัดแปลงควรได้รับการบันทึกไว้ในรูปแบบที่ช่วยให้สมาชิกคนอื่นในชุมชนสามารถทำซ้ำได้
 
-* Publishing or distributing materials in violation of the project license terms is not allowed.
+* ไม่อนุญาตให้เผยแพร่หรือแจกจ่ายวัสดุอุปกรณ์ในลักษณะที่เป็นการละเมิดข้อกำหนด license ของโครงการ
 
 ---
 
 ## 4. Unacceptable Behavior
 
-Unacceptable behavior includes:
+พฤติกรรมที่ไม่ยอมรับรวมถึง:
 
-* spamming and intentionally cluttering discussions;
-* trolling, provocations, and toxic behavior;
-* political or off-topic discussions;
-* insults or discrimination against community members;
-* publishing knowingly dangerous or unverified technical recommendations;
-* actions that could compromise the safety of participants or the reputation of the project.
+* การสแปมและจงใจทำให้การอภิปรายยุ่งเหยิง;
+* การ trolling การยั่วยุ และพฤติกรรมที่เป็นพิษ (toxic behavior);
+* การอภิปรายเกี่ยวกับประเด็นทางการเมืองหรือเรื่องนอกประเด็น (off-topic);
+* การดูถูกหรือการเลือกปฏิบัติต่อสมาชิกในชุมชน;
+* การเผยแพร่คำแนะนำทางเทคนิคที่เป็นอันตรายอย่างเห็นได้ชัดหรือคำแนะนำที่ไม่ได้รับการตรวจสอบ;
+* การกระทำที่อาจส่งผลกระทบต่อความปลอดภัยของผู้เข้าร่วมหรือชื่อเสียงของโครงการ
 
 ---
 
 ## 5. Moderation
 
-The administration of DKB-1571 reserves the right to:
+ฝ่ายบริหารของ DKB-1571 ขอสงวนสิทธิ์ในการ:
 
-* delete messages or materials that violate this Code of Conduct;
-* restrict access to users who systematically violate community rules;
-* delete information that poses a threat to the safety of the project or its participants.
+* ลบข้อความหรือเนื้อหาที่ละเมิด Code of Conduct นี้;
+* จำกัดการเข้าถึงของผู้ใช้ที่ละเมิดกฎของชุมชนอย่างเป็นระบบ;
+* ลบข้อมูลที่เป็นภัยคุกคามต่อความปลอดภัยของโครงการหรือผู้เข้าร่วมโครงการ
 
 ---
 
-Practice is the best criterion of truth.
+การปฏิบัติคือเกณฑ์วัดความจริงที่ดีที่สุด

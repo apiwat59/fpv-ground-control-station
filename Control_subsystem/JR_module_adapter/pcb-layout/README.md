@@ -1,11 +1,11 @@
-### Connector Board Manufacturing Instructions
+### คำแนะนำการผลิต Connector Board (Connector Board Manufacturing Instructions)
 
-For mounting the PCE-C-05 (XS1) connector and wires, a prototype board is prepared from a standard double-sided prototyping PCB (grid pitch **2.54 mm**, base size **30x70 mm**).
+สำหรับการยึด PCE-C-05 (XS1) connector และสายไฟ จะเตรียมแผ่น prototype board ขึ้นมาจาก double-sided prototyping PCB มาตรฐาน (ระยะห่าง grid pitch **2.54 mm**, ขนาด base size **30x70 mm**)
 
 <img width="800" alt="Connector board" src="connector_board_drawing.JPG" />
 
-**Preparation Process:**
+**ขั้นตอนการเตรียมการ (Preparation Process):**
 
-* **Marking and cutting:** cut a piece of the prototyping board of size **3 x 7 mounting holes**
-* **Mounting holes preparation:** two mounting holes (according to the drawing) must be redrilled to a diameter of **2.20 mm**
-* **Purpose:** the enlarged holes allow secure attachment of the board to the module base using **M2** screws
+* **การทำเครื่องหมายและการตัด (Marking and cutting):** ตัดชิ้นส่วนของ prototyping board ขนาด **3 x 7 mounting holes**
+* **การเตรียมรูยึด (Mounting holes preparation):** เจาะขยายรูยึดสองรู (ตามแบบเขียน) ให้มีขนาดเส้นผ่านศูนย์กลาง **2.20 mm**
+* **วัตถุประสงค์ (Purpose):** รูที่เจาะขยายจะช่วยให้สามารถยึด board เข้ากับ base ของ module ได้อย่างแน่นหนาโดยใช้สกรู **M2**

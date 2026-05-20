@@ -1,22 +1,22 @@
 # Cables
 
-To connect the control unit with the remote unit of the station, as well as to connect peripheral devices to them, cables made of shielded multi-strand copper twisted pair are used.
+ในการเชื่อมต่อ control unit เข้ากับ remote unit ของ station รวมถึงการเชื่อมต่ออุปกรณ์ peripheral เข้ากับพวกมัน จะใช้ cables ที่ทำจาก shielded multi-strand copper twisted pair
 
 ## Set 1 - Trunk
 
-This set is designed to connect the station's control unit and remote unit to each other. The standard trunk cable is 2 meters long and is stored inside the station body when in transit. Depending on the tasks, the set can be supplemented with additional trunk cables, such as a 5-8 meter cable for operating with a repeater from a shelter, and a 25-50 meter cable for stationary operation from a shelter.
+Set นี้ได้รับการออกแบบมาเพื่อเชื่อมต่อ control unit และ remote unit ของ station เข้าด้วยกัน โดยมาตรฐานของ trunk cable จะมีความยาว 2 meters และจัดเก็บไว้ใน station body ระหว่างการเคลื่อนย้าย ทั้งนี้ขึ้นอยู่กับลักษณะงาน set นี้สามารถเสริมด้วย trunk cables เพิ่มเติมได้ เช่น cable ขนาด 5-8 meters สำหรับใช้งานร่วมกับ repeater จาก shelter และ cable ขนาด 25-50 meters สำหรับการใช้งานแบบประจำที่ (stationary) จาก shelter
 
 <img width="600" alt="General view of Set 1 cables" src="picture/general_view_of_cables_set_1.jpg" />
 
-The beginning of the standard trunk cable connects to the control unit, and its end connects to the remote unit hub of the station.
+จุดเริ่มต้นของ standard trunk cable จะเชื่อมต่อกับ control unit และจุดสิ้นสุดจะเชื่อมต่อกับ remote unit hub ของ station
 
-To connect the standard trunk cable to an additional one, a cable connector is used. The end of the standard trunk cable is plugged into one port of the connector, and the beginning of the additional trunk cable into the second port. The end of the additional trunk cable then connects to the remote unit hub of the station accordingly.
+ในการเชื่อมต่อ standard trunk cable เข้ากับ additional cable จะใช้ cable connector โดยปลายของ standard trunk cable จะเสียบเข้ากับ port หนึ่งของ connector และจุดเริ่มต้นของ additional trunk cable จะเสียบเข้ากับ port ที่สอง จากนั้นปลายของ additional trunk cable จะเชื่อมต่อกับ remote unit hub ของ station ตามลำดับ
 
-If the connector is not available, the additional trunk cable connects directly to the control unit instead of the standard trunk cable.
+หากไม่มี connector ตัว additional trunk cable จะเชื่อมต่อโดยตรงกับ control unit แทน standard trunk cable
 
 <img width="600" alt="Example of connecting Set 1 cables using the cable connector" src="picture/example_of_connecting_cables_to_the_connector.jpg" />
 
-When manufacturing the trunk set, the following cable types can be used:
+ในการผลิต trunk set สามารถใช้ cable types ต่อไปนี้ได้:
 <ul>
 <li>RVSP twisted pair 8x0.5mm² / 20AWG</li>
 <li>RVSP twisted pair 8x0.3mm² / 22AWG</li>
@@ -24,15 +24,15 @@ When manufacturing the trunk set, the following cable types can be used:
 <li>LAPP UNITRONIC LiYCY (TP) 4x2x0.25</li>
 </ul>
 
-The length of the trunk cable line depends on the cable type. For cables with a cross-section of 0.5 mm², the maximum cable line length is 50 meters. For cables with a cross-section of 0.25-0.3 mm², the maximum cable line length is 25 meters.
+ความยาวของแนว trunk cable ขึ้นอยู่กับ cable type สำหรับ cables ที่มี cross-section ขนาด 0.5 mm² ความยาวสูงสุดของสายคือ 50 meters และสำหรับ cables ที่มี cross-section ขนาด 0.25-0.3 mm² ความยาวสูงสุดของสายคือ 25 meters
 
 <img width="800" alt="Schematic diagram of Set 1 cables" src="schematic_diagram/schematic_diagram_of_cables_set_1.JPG" />
 
 ### Note!
 <ul>
-<li>When manufacturing cables, the connection of the cable shield to the common (ground) wire on the connector is made only on one side to prevent ground loops.</li>
-<li>The side of the cable where the shield is connected to the common wire is the beginning of the cable. The beginning of the cable is marked with heat-shrink tubing.</li>
-<li>When using cables with a cross-section of 0.5 mm², the inlet opening of the connector housings must be filed/enlarged with a needle file to the diameter of the cable used.</li>
+<li>ในการผลิต cables การเชื่อมต่อ cable shield เข้ากับสาย common (ground) บน connector จะทำเพียงด้านเดียวเท่านั้น เพื่อป้องกันไม่ให้เกิด ground loops</li>
+<li>ด้านของ cable ที่เชื่อมต่อ shield เข้ากับสาย common จะเป็นจุดเริ่มต้น of cable โดยจุดเริ่มต้นของ cable จะถูกทำเครื่องหมายด้วย heat-shrink tubing</li>
+<li>เมื่อใช้ cables ที่มี cross-section ขนาด 0.5 mm² ช่องทางเข้าของ connector housings จะต้องถูกตะไบหรือขยายขนาดด้วย needle file ให้มีขนาดเท่ากับเส้นผ่านศูนย์กลางของ cable ที่ใช้</li>
 </ul>
 
 <img width="600" alt="Soldering connectors on Set 1 cable" src="picture/view_of_soldered_cable_connectors_set_1.jpeg" />
@@ -48,7 +48,7 @@ The length of the trunk cable line depends on the cable type. For cables with a 
 
 <img width="800" alt="Schematic diagram of the Set 1 cable connector" src="schematic_diagram/schematic_diagram_of_the_cable_connector_set_1.JPG" />
 
-Design-wise, the connector is built in a small enclosure containing the sockets wired together according to the corresponding electrical schematic.
+ในด้านการออกแบบ connector ถูกสร้างขึ้นใน enclosure ขนาดเล็กที่ประกอบด้วย sockets ซึ่งเชื่อมต่อสายเข้าด้วยกันตาม electrical schematic ที่เกี่ยวข้อง
 
 <img width="600" alt="Example of cable connector assembly" src="picture/connector_assembly_example.jpg" />
 
@@ -67,25 +67,25 @@ Design-wise, the connector is built in a small enclosure containing the sockets 
 
 ## Set 2 - Peripheral
 
-This set is designed for connecting peripheral devices to the control unit and the remote unit of the station. It includes:
+Set นี้ออกแบบมาสำหรับเชื่อมต่ออุปกรณ์ peripheral เข้ากับ control unit และ remote unit ของ station ประกอบด้วย:
 <ul>
-<li>cables for connecting VRX blocks (yellow heat-shrink tubing)</li>
-<li>control subsystem cables (blue heat-shrink tubing)</li>
+<li>cables for connecting VRX blocks (ใช้ yellow heat-shrink tubing)</li>
+<li>control subsystem cables (ใช้ blue heat-shrink tubing)</li>
 </ul>
 
 <img width="600" alt="General view of Set 2 cables" src="picture/general_view_of_cables_set_2.jpg" />
 
 ## Cables for Connecting VRX Blocks
 
-Depending on the station configuration, two cable options can be used, differing in their ability to transmit control signals to the VRX block. If the VRX block is controlled manually or via an ELRS Backpack, the first option cable is used. If the control is carried out via the switching lines of the ground station, the second option cable is used. The beginning of the cable connects to the remote unit hub, and the end of the cable connects to the VRX block.
+ทั้งนี้ขึ้นอยู่กับ station configuration ซึ่งสามารถเลือกใช้ cable options ได้สองแบบ แตกต่างกันที่ความสามารถในการส่งสัญญาณควบคุมไปยัง VRX block หากควบคุม VRX block แบบ manual หรือผ่าน ELRS Backpack จะใช้สายทางเลือกแรก (first option cable) หากควบคุมผ่าน switching lines ของ ground station จะใช้สายทางเลือกที่สอง (second option cable) จุดเริ่มต้นของ cable เชื่อมต่อกับ remote unit hub และจุดสิ้นสุดของ cable เชื่อมต่อกับ VRX block
 
 <img width="800" alt="Schematic diagram of cables for connecting VRX blocks of Set 2" src="schematic_diagram/schematic_diagram_of_cables_VRX_blocks_set_2.JPG" />
 
 ### Note!
 <ul>
-<li>When manufacturing cables, the connection of the cable shield to the common (ground) wire on the connector is made only on one side to prevent ground loops.</li>
-<li>The side of the cable where the shield is connected to the common wire is the beginning of the cable. The beginning of the cable is marked with heat-shrink tubing, where the color of the tubing also indicates the cable type (yellow color for connecting VRX blocks).</li>
-<li>When manufacturing cables, the inlet opening of the connector housings must be filed/enlarged with a needle file to the diameter of the cable used.</li>
+<li>ในการผลิต cables การเชื่อมต่อ cable shield เข้ากับสาย common (ground) บน connector จะทำเพียงด้านเดียวเท่านั้น เพื่อป้องกันไม่ให้เกิด ground loops</li>
+<li>ด้านของ cable ที่เชื่อมต่อ shield เข้ากับสาย common จะเป็นจุดเริ่มต้นของ cable โดยจุดเริ่มต้นของ cable จะถูกทำเครื่องหมายด้วย heat-shrink tubing ซึ่งสีของ tubing จะเป็นตัวบ่งบอกประเภทของ cable ด้วย (ใช้สีเหลืองสำหรับการเชื่อมต่อ VRX blocks)</li>
+<li>ในการผลิต cables ช่องทางเข้าของ connector housings จะต้องถูกตะไบหรือขยายขนาดด้วย needle file ให้มีขนาดเท่ากับเส้นผ่านศูนย์กลางของ cable ที่ใช้</li>
 </ul>
 
 ### List of required components for manufacturing one VRX block connection cable
@@ -97,15 +97,15 @@ Depending on the station configuration, two cable options can be used, differing
 
 ## Control Subsystem Cables
 
-This type of cable is used to connect the JR module for the remote controller (long cable) and the TX unit (short cable). The beginning of the cable connecting the JR module to the station control unit is connected to the control unit, and the end connects to the JR module. The beginning of the cable connecting the TX unit to the remote unit hub connects to the hub, and the end connects to the TX unit.
+cable ประเภทนี้ใช้เพื่อเชื่อมต่อ JR module สำหรับ remote controller (สายยาว) และ TX unit (สายสั้น) โดยจุดเริ่มต้นของ cable ที่เชื่อมต่อ JR module เข้ากับ station control unit จะเชื่อมต่อเข้ากับ control unit และปลายสายเชื่อมต่อกับ JR module สำหรับจุดเริ่มต้นของ cable ที่เชื่อมต่อ TX unit เข้ากับ remote unit hub จะเชื่อมต่อเข้ากับ hub และปลายสายเชื่อมต่อกับ TX unit
 
 <img width="800" alt="Schematic diagram of the control subsystem cables of Set 2" src="schematic_diagram/schematic_diagram_of_the_control_subsystem_cables_set_2.JPG" />
 
 ### Note!
 <ul>
-<li>When manufacturing cables, the connection of the cable shield to the common (ground) wire on the connector is made only on one side to prevent ground loops.</li>
-<li>The side of the cable where the shield is connected to the common wire is the beginning of the cable. The beginning of the cable is marked with heat-shrink tubing, where the color of the tubing also indicates the cable type (blue color for control subsystem cables).</li>
-<li>When manufacturing cables, the inlet opening of the connector housings must be filed/enlarged with a needle file to the diameter of the cable used.</li>
+<li>ในการผลิต cables การเชื่อมต่อ cable shield เข้ากับสาย common (ground) บน connector จะทำเพียงด้านเดียวเท่านั้น เพื่อป้องกันไม่ให้เกิด ground loops</li>
+<li>ด้านของ cable ที่เชื่อมต่อ shield เข้ากับสาย common จะเป็นจุดเริ่มต้นของ cable โดยจุดเริ่มต้นของ cable จะถูกทำเครื่องหมายด้วย heat-shrink tubing ซึ่งสีของ tubing จะเป็นตัวบ่งบอกประเภทของ cable ด้วย (ใช้สีน้ำเงินสำหรับ control subsystem cables)</li>
+<li>ในการผลิต cables ช่องทางเข้าของ connector housings จะต้องถูกตะไบหรือขยายขนาดด้วย needle file ให้มีขนาดเท่ากับเส้นผ่านศูนย์กลางของ cable ที่ใช้</li>
 </ul>
 
 <img width="600" alt="Soldering connector on Set 2 cable" src="picture/view_of_soldered_cable_connectors_set_2.jpg" />
